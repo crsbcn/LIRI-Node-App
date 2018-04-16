@@ -58,11 +58,11 @@ function showTweets(){
     if(!error){
       for(var i = 0; i<tweets.length; i++){
         var date = tweets[i].created_at;
-        console.log("@StefanieDing: " + tweets[i].text + " Created At: " + date.substring(0, 19));
+        console.log("@Chris_Bacani_: " + tweets[i].text + " Created At: " + date.substring(0, 19));
         console.log("-----------------------");
         
         //adds text to log.txt file
-        fs.appendFile('log.txt', "@StefanieDing: " + tweets[i].text + " Created At: " + date.substring(0, 19));
+        fs.appendFile('log.txt', "@Chris_Bacani_: " + tweets[i].text + " Created At: " + date.substring(0, 19));
         fs.appendFile('log.txt', "-----------------------");
       }
     }else{
